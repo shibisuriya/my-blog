@@ -7,20 +7,16 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'Classic Slither.io',
+    description: `Experience Slither.io gameplay on a Nokia 6110-style snake game, powered by React and WebRTC. Play against bots or your friends.`,
+    imgSrc: '/static/images/slitherio.jpeg',
+    href: 'https://github.com/shibisuriya/classic-slither.io',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
+    title: 'Indian E-commerce Product Scraper',
+    description: `This project allows you to scrape products from various Indian e-commerce websites. It consists of multiple Python scripts, each dedicated to scraping a specific website.`,
     imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    href: 'https://github.com/shibisuriya/indian-e-commerce-scaper',
   },
 ]
 
