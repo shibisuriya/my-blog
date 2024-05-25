@@ -1,1 +1,15 @@
-{"devops":1,"jenkins":1,"pipeline":1,"cicd":1,"hack":1,"deployment":1,"productivity":1,"developer-experience":1,"react":2,"javascript":2,"immer":2,"design-patterns":2}
+{
+  "react": 1,
+  "javascript": 1,
+  "immer": 1,
+  "design-patterns": 1,
+  "devops": 2,
+  "jenkins": 2,
+  "pipeline": 2,
+  "cicd": 2,
+  "hack": 2,
+  "deployment": 2,
+  "productivity": 2,
+  "developer-experience": 2,
+  "developer-productivity": 1
+}
