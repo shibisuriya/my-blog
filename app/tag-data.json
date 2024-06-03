@@ -1,15 +1,1 @@
-{
-  "react": 1,
-  "javascript": 1,
-  "immer": 1,
-  "design-patterns": 1,
-  "devops": 2,
-  "jenkins": 2,
-  "pipeline": 2,
-  "cicd": 2,
-  "hack": 2,
-  "deployment": 2,
-  "productivity": 2,
-  "developer-experience": 2,
-  "developer-productivity": 1
-}
+{ "developer-productivity": 1, "note-taking": 1, "obsidian": 1, "neovim": 1, "github": 1, "git": 1 }
