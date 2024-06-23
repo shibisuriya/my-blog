@@ -98,14 +98,14 @@ We might unintentionally delete a Git repo, assuming that all commits have been 
 
 To avoid this situation, we can store our notes outside the repo and symlink it inside the repo into a directory that is ignored by git globally.
 
-Let's assume our notes are located at `~/Desktop/office-notes/kissflow-feature-x` and our project's Git repository is at `~/Desktop/projects/kissflow-frontend`.
+Let's assume our notes are located at `~/Desktop/office-notes/startup-feature-x` and our project's Git repository is at `~/Desktop/projects/startup-frontend`.
 
 Then, we can symlink our notes directory to a directory inside the codebase.
 
 ```bash
-cd ~/Desktop/projects/kissflow-frontend
+cd ~/Desktop/projects/startup-frontend
 mkdir temp-notes # First, create a directory that is ignored by git (using .gitignore_global).
-ln -s ~/Desktop/office-notes/kissflow-feature-x ~/Desktop/projects/kissflow-frontend/temp-notes/
+ln -s ~/Desktop/office-notes/startup-feature-x ~/Desktop/projects/startup-frontend/temp-notes/
 ```
 
 This way, our notes are stored outside the codebase but can be accessed directly from within the codebase.
