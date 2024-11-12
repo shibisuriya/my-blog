@@ -7,6 +7,12 @@ interface Project {
 
 const projectsData: Project[] = [
   {
+    title: 'Dir Bunny',
+    description: `dir-bunny is a CLI tool that lets you hop back and forth between your current working directory and the directories you were in before.`,
+    imgSrc: '/static/images/projects/dir-bunny.webp',
+    href: 'https://github.com/shibisuriya/dir-bunny',
+  },
+  {
     title: 'Classic Slither.io',
     description: `Experience Slither.io gameplay on a Nokia 6110-style snake game, powered by React and WebRTC. Play against bots or your friends.`,
     imgSrc: '/static/gifs/slither-io-gameplay.gif',
