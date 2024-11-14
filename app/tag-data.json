@@ -1,14 +1,1 @@
-{
-  "dotfiles": 1,
-  "distro-hopping": 1,
-  "developer-productivity": 2,
-  "ricing": 1,
-  "docker": 1,
-  "unix": 1,
-  "linux": 1,
-  "gnu-stow": 1,
-  "neovim": 2,
-  "ansible-playbook": 1,
-  "lab": 1,
-  "note-taking": 1
-}
+{"dotfiles":1,"distro-hopping":1,"developer-productivity":2,"ricing":1,"docker":1,"unix":1,"linux":1,"gnu-stow":1,"neovim":2,"ansible-playbook":1,"lab":1,"note-taking":1}
