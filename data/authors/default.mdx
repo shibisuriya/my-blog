@@ -9,4 +9,26 @@ linkedin: https://www.linkedin.com/in/shibisuriya
 github: https://github.com/shibisuriya
 ---
 
-I am an amateur software engineer currently working for [Kissflow](https://kissflow.com).
+export function getCareerDuration() {
+  const startDate = new Date(2021, 6, 21)
+  const today = new Date()
+
+let years = today.getFullYear() - startDate.getFullYear()
+let months = today.getMonth() - startDate.getMonth()
+let days = today.getDate() - startDate.getDate()
+
+if (days < 0) {
+months -= 1
+days += new Date(today.getFullYear(), today.getMonth(), 0).getDate()
+}
+if (months < 0) {
+years -= 1
+months += 12
+}
+
+return { years, months, days }
+}
+
+export const careerDuration = getCareerDuration()
+
+I am a full stack developer with **{careerDuration.years} years, {careerDuration.months} months and {careerDuration.days} days** of experience, currently working at <a href="https://kissflow.com/" target="_blank">Kissflow</a>.
