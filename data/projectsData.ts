@@ -5,6 +5,8 @@ interface Project {
   imgSrc?: string
 }
 
+// The project's banner image's aspect ratio should be 800:691.
+
 const projectsData: Project[] = [
   {
     title: 'Dir Bunny',
