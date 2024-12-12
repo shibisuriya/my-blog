@@ -1,0 +1,62 @@
+---
+title: 'Comprehensive guide to managing dotfiles'
+date: '2024-06-03'
+lastmod: '2024-06-03'
+tags:
+  [
+    'dotfiles',
+    'distro-hopping',
+    'developer-productivity',
+    'ricing',
+    'docker',
+    'unix',
+    'linux',
+    'gnu-stow',
+    'neovim',
+    'ansible-playbook',
+    'lab',
+    'devops',
+  ]
+draft: true
+summary: 'By configuring global gitignore and tweeking '
+images: ['/static/images/managing-dotfiles/dotfiles-banner.webp']
+layout: PostLayout
+---
+
+![Samurai Tux](/static/images/managing-dotfiles/dotfiles-banner.webp)
+
+# What are dotfiles?
+
+Dotfiles are hidden configuration files that are used to
+customize the behaviour of various programs in Unix-based
+operating systems like GNU/Linux and macOS. For example, the
+dotfile `.zshrc` (typically present in the user's home
+directory) can be used to customize the user's zsh shell.
+
+# The problem with dotfiles
+
+## New computers
+
+Typically, we tend to customize the computer programs that
+we use on a regular basis to get our work done faster.
+Customizations might range from adding a few custom key
+biddings or changing the programs appearance.
+
+## Owning multiple computers
+
+If you own multiple computers, customizations done to a
+program installed on a computer won't automatically
+propogate to other computers.
+
+For example, changing your office computer's Z shell's
+prompt won't change the prompt of the Z shell installed on
+your personal Desktop computer.
+
+Syncing the customizations across multiple devices is the
+user's responsibilty... The user has to manually compare the
+appropriate configuration files present in multiple
+computers, carefully merge the differences, copy the new
+version of the configuration files to all the devices and
+ensure that they work... This method of keep the
+configuration files in sync across multiple devices is time
+consuming, tedious and risky.
