@@ -1,13 +1,20 @@
 ---
-draft: true
+draft: false
 test: 'test'
 ---
+
+Name: Shibi Suriya P
+
+GitHub: github.com/shibisuriya
+
+LinkedIn: www.linkedin.com/in/shibisuriya
 
 # Skills
 
 ## Programming languages
 
-Javascript/Typescript, Python, Golang, C/C++, Z shell, SQL, lua, YAML, Markdown, JSDoc.
+Javascript/Typescript, Python, Golang, C/C++, Shell script, SQL, lua, YAML, Markdown,
+JSDoc, HTML, CSS, ARM/x86 assembly.
 
 ## Frameworks and Libraries
 
@@ -16,9 +23,9 @@ dnd-kit, Pandas, TanStack Query, Zustand, Next.js, Nuxt.js, C++ STL.
 
 ## Tools and Technologies
 
-Docker, Ansible, Kubernetes, Nix, kind, Linux, Jenkins, AWS, Git/Github, GDB, clangd, GCC,
-Vim, Webpack, Storybook, QEMU, Grafana, ngrok, ESLint, Pandoc, pnpm, Vite, Vitepress,
-Github actions.
+Docker, Ansible, Kubernetes, Nix, kind, GNU/Linux, Jenkins, AWS, Git/Github, GDB, clangd,
+GCC, Vim, Webpack, Storybook, QEMU, Grafana, ngrok, ESLint, Pandoc, pnpm, Vite, Vitepress,
+Github actions, CMake, NASM.
 
 # Work Experience
 
@@ -40,6 +47,55 @@ no-code/low-code platform (both Web and PWA) to accommodate custom form fields: 
 #### Scaffolding tool
 
 - Built a CLI application using Node.js and EJS which lets users create projects (Kissflow
-  custom components) that have Webpack, ESLint, Dev server, Prettier, etc. configurated to
-  seamlessly work with Kissflow, so that the users can focus on developing the business
-  logic of the custom component instead of worrying about setting up a project.
+  custom components) that have Webpack, ESLint, HTTP server (Dev server), forward proxy,
+  Prettier, etc. configurated to seamlessly work with Kissflow, so that the users can
+  focus on developing the business logic of the custom component instead of worrying about
+  setting up a project.
+
+- Setup CD using Github Actions to automatically release patch versions of packages to npm
+  registry when a pull request is merged to the master branch.
+
+- The users can run the project (dev build) on their machine and preview how the modules
+  exported by the project will look and behave across the platform in different scenarios
+  allowing them to iterate faster.
+
+  - The browser prevented loading of assets served by the dev server into the platform
+    (webapp) due to [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP). I configured a forward proxy in the dev
+    server that allows the browser to load the entire platform through it. Now that the
+    platform and the local files are loaded from the same origin, the Content Security
+    Policy is bypassed.
+
+#### Dynamic Loader and API
+
+- Built a Dynamic Loader using Webpack's Module Federation to load modules exported by
+  Custom Form Fields (Dynamic Remotes) into the platform during runtime.
+
+- Designed and implemented a simple and intuitive React props-based API using which the
+  modules of custom form fields interact with the platform.
+
+### Developer Experience
+
+- Implemented live reloading using websocket and HtmlWebpackPlugin.
+
+- Made multiple tweeks to Jenkins.
+
+## Mar 2022 - May 2023 - Member of Technical Staff - Facilio
+
+- Rewrote multiple critical legacy features in order to enhance their efficiency,
+  dependability and scalability while adhering to modern software engineering standards.
+
+- Separated authentication related components and move it to a separate repository, so
+  that the authentication services can be deployed independently.
+
+## Jun 2021 - Mar 2022 - Product Engineer - Fintuple Technolgies
+
+- Making improvements to Angular projects by fixing errors, improving performance and
+  adding new features.
+
+- Implemented CI/CD for multiple Angular projects using Github Actions.
+
+- Built a web scraper to scrape price data from Bombay Stock Exchange’s official website.
+
+- Built a REST API to extract structured text data from images of Indian OVDs (Officially
+  Valid Documents) such as Aadhaar card, driving license, PAN card, etc. using Amazon
+  Textract and AWS Lambda.
