@@ -68,9 +68,64 @@ techniques since this blog post also serves as a README for my publically mainta
 free to [share suggestions](https://github.com/shibisuriya/.dotfiles/issues), or let
 [me](https://linkedin.com/in/shibisuriya) know if you’d like me to try something.
 
+## macOS
+
+1. Install [nix](https://nixos.org/) for macOS, do a
+   [multi user installation](https://nixos.org/download/).
+
+2. Clone your dotfiles repo,
+
+My dotfiles repo is public. If yours are private, you must first install Git and set up your
+credentials.
+
+```bash
+nix-shell -p git --run "git clone --recurse-submodules https://github.com/shibisuriya/.dotfiles ~/.dotfiles"
+```
+
+3. Install nix-darwin
+
+```bash
+nix run nix-darwin --extra-experimental-features 'nix-command flakes' -- switch --flake ~/.dotfiles/nix-darwin#care_taker_1
+```
+
+4. The `darwin-rebuild` command
+
+Ones nix-darwin is installed, we will have access to the `darwin-rebuild` command,
+
+```bash
+darwin-rebuild switch --flake ~/.dotfiles/nix-darwin#care_taker_1
+```
+
+5. Install TPM
+
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+Note: This step needs to be automated.
+
+6. Symlink your dotfiles to appropriate locations on your machine using GNU Stow,
+
+```bash
+./stow.zsh # Uses GNU Stow under the hood.
+```
+
+I understand that 'nix home manager' can handle this more gracefully, but for now I am satisfied
+with Stow.
+
+7. Update you git configuration (this step needs to be automated, I am performing this step manually
+   for now because I don't want my email, etc. to leak).
+
 ## Testing/Iterating
 
-### UTM
+### macOS
 
-[UTM](https://mac.getutm.app) is program to create and manage virtual machine, it is wrapper on
-QEMU.
+1. Download and install [UTM](https://mac.getutm.app/), a simple and intuitive app for creating and
+   managing virtual machines on macOS; it is a wrapper around [QEMU](https://www.qemu.org/).
+
+1. Create a macOS VM in UTM. ![Create macOS vm in UTM](/static/images/managing-dotfiles/utm-1.png)
+
+1. Create a clone of the VM. Use the clone for testing/iterating... If something goes wrong, delete
+   the clone and create another one. ![Clone vm in UTM](/static/images/managing-dotfiles/utm-2.png)
+
+1. Follow these [steps](#macos).
