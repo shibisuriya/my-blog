@@ -9,8 +9,7 @@
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint --fix --dir pages --dir app --dir components --dir lib --dir layouts --dir scripts",
-    "prepare": "husky",
-    "resume:export": "concurrently -k -n BLOG,EXPORT -c blue,green --success=first \"yarn dev\" \"wait-on http://localhost:3000/resume && tsx ./scripts/export-resume.js\""
+    "prepare": "husky"
   },
   "dependencies": {
     "@headlessui/react": "2.2.0",
