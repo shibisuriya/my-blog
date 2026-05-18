@@ -14,7 +14,7 @@ tags:
     'sys-ops',
     'devops',
   ]
-draft: false
+draft: true
 series: 'Shell utils'
 part: 3
 summary:
@@ -39,14 +39,16 @@ operation takes some time to complete & it could fail due to multiple reasons,
 your computer could have shutdown due to a power outage, the cable could have
 moved causing disconnection, etc.
 
+A failed copy or move operation is super annoying, now
+
 If a copy or move operation fails, to be on the safer side you have to restart
 the operation... The move operation is suspended in A failed "move" operation is
 super annoying, some of your files are left at the source & the remaining are
 moved to the target.
 
-Also the move operation is super annoying if it fails, some of the files &
+Also when move operation is super annoying if it fails, some of the files &
 directories will be left at the source the others would have been moved to the
-target.
+target. 
 
-Because of this reason, I prefer to copy the files or directories to the target
-location & them delete the original instead of moving them (cut the paste).
+Due to this, I prefer to copy the files or directories to the target location &
+them delete the original instead of moving them (cut the paste).
